@@ -1,18 +1,23 @@
 # Algorithm Document
 
+
 purpose: get the area of the room  
 name: floor size   
 parameter: room number  
 return: calculated area  
 algorithm:
 1. ask user the width of the room
-2. while width is not digit
+2. set temp to width and replace '.' with ''
+2. while temp is not digit
    3. output invalid input
    4. prompt user to enter width
+   5. set temp to width and replace '.' with ''
 2. ask user the length of the room
-2. while length is not digit
+2.  set temp to length and replace '.' with ''
+2. while temp is not digit
    3. output invalid input
    4. prompt user to enter length
+   5. set temp to length and replace '.' with ''
 2. calculate area = length * width
 
 purpose: find out type of flooring  
