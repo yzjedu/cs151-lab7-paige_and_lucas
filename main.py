@@ -2,9 +2,20 @@
 def input_float():
 
 def floor_size():
-    width = input('width')
-    while not width.isdigit()
+    width = int(input('width'))
+    temp = width.replace('.', ' ')
+    while not temp.isdigit():
+        print("invalid input")
+        width = input('width')
+        temp = width.replace('.', ' ')
+    return float(temp)
     length = int(input('length'))
+    temp = length.replace('.', ' ')
+    while not temp.isdigit():
+        print("invalid input")
+        length = input('length')
+        temp = length.replace('.', ' ')
+    return float(temp)
     area = width * length
     return area
 def floor_style():
