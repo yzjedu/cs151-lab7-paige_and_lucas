@@ -6,7 +6,13 @@ parameter: room number
 return: calculated area  
 algorithm:
 1. ask user the width of the room
+2. while width is not digit
+   3. output invalid input
+   4. prompt user to enter width
 2. ask user the length of the room
+2. while length is not digit
+   3. output invalid input
+   4. prompt user to enter length
 2. calculate area = length * width
 
 purpose: find out type of flooring  
@@ -39,4 +45,6 @@ purpose:
 name: main
 parameter:  
 return: 
-1. 
+1. set count to 0
+2. while count is less than or equal to 5:
+   3. 
