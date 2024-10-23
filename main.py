@@ -1,13 +1,18 @@
 # your code
+def input_float():
+
 def floor_size():
-    width = int(input('width'))
+    width = input('width')
+    while not width.isdigit()
     length = int(input('length'))
     area = width * length
     return area
 def floor_style():
     floor_type = input('flooring type')
     return floor_type
-def room_cost(floor_type,area):
+def room_cost():
+    floor_type = floor_style()
+    area = floor_size()
     hardwood_cost = 1.39
     carpet_cost = 3.99
     tile_cost = 4.99
@@ -22,8 +27,12 @@ def room_cost(floor_type,area):
         return cost
 
 
-def main(cost):
+def main():
+    count = 0
+    while count < 5:
+        cost = room_cost()
+        count += 1
+        print(cost)
 
-   print(cost)
 
-main(room_cost(floor_style(),floor_size()))
+main()
